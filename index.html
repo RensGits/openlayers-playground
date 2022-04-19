@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using OpenLayers with Vite</title>
+    <title>OpenLayers/Vite playground</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div class="page-container">
+      <h1 class="page-header">OpenLayers</h1>
+      <div class="flex-wrapper">
+        <div class="tools-container">
+          <h3>Tools</h3>
+          <a id="clear">Clear</a><br/>
+          <a id="download" >Download</a>
+          <h3>Layers</h3>
+            <input type="checkbox" id="standardMap" name="standardMap" value="standardMap" checked>
+            <label for="standardMap">Basic map</label><br/>
+            <input type="checkbox" id="countryBorders" name="countryBorders" value="countryBorders" checked>
+            <label for="countryBorders">Country borders</label>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

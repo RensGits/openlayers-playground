@@ -1,12 +1,47 @@
 @import "node_modules/ol/ol.css";
 
-html, body {
-  margin: 0;
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+  }
+
+body{
+  padding: 2em 4em 2em 4em;
+}
+
+#map {
+  flex: 10;
+  background-color: rgb(214, 242, 255);
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+
+.flex-wrapper{
+  display: flex;
+  height: 70vh;
   width: 100%;
+  margin-top: 3em;
+}
+
+.tools-container{
+  flex: 2;
+  padding: 2em;
+  background-color: rgb(238, 238, 238);
+}
+
+.tools-container > a:hover{
+  color: rgb(44, 86, 165);
+  cursor: pointer;
 }
