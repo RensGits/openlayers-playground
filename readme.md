@@ -1,18 +1,15 @@
-# OpenLayers + Vite
+# OpenLayers Playground
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+I use this repository to teach myself OpenLayers.
 
-To get started, run the following (requires Node 12+):
+Current functionality:
 
-    npx create-ol-app my-app --template vite
+- Display standard OSM map
+- Display country borders map
+- Draw / Edit new vectors in new map layer
+- Download drawn vectors 
+- Load JSON map data with Drag and drop
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:3000):
-
-    cd my-app
-    npm start
-
-To generate a build ready for production:
-
-    npm run build
-
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+Technologies used:
+- OpenLayers 6.14.1
+- Vite 
